@@ -1,0 +1,6 @@
+      Plan                                                                                     Description  Users  Integrations  Features  Analytics  Storage (TB)  Reports Timeframe  Total (CDN)  Total (Pi0Coin)  Total (ETH)
+     Basic          For 3-person company, rapid deployment, core PI0Secure features, minimal customization      3             1         2          0             1        1    1 week          415            1.527        0.247
+  Standard     For 300-person company, full PI0Secure suite, moderate customization, compliance, reporting    300             3         4          2            10        4   3 weeks         1370             5.04        0.815
+  Advanced              For 3000-person company, advanced security, integrations, analytics, and reporting   3000             6         8          4            50        8   6 weeks         2770            10.19        1.649
+Enterprise    For 30,000-person company, enterprise-grade, multi-site, custom features, advanced analytics  30000            12        16          8           200       16  12 weeks         5640           20.748        3.357
+   Quantum For 30,000+ users, quantum security, AI-driven analytics, global deployment, unlimited features  30000            20        32         16          1000       32  16 weeks        11480           42.232        6.833

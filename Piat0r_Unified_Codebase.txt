@@ -1,0 +1,75 @@
+
+Unified Piat0r Codebase for Apple Mac/iOS
+=========================================
+
+1. C++ Core Modules (Compiled with Apple Clang)
+-----------------------------------------------
+// File: pi0kernel.h / pi0kernel.cpp
+class Pi0Kernel {
+public:
+    Pi0Kernel(const std::string& config_path);
+    // Core Pi0System methods
+};
+
+// File: modules/QuantumScience.h / QuantumScience.cpp
+class QuantumScience {
+public:
+    QuantumScience(Pi0Kernel& kernel);
+    State evolve_state(const State& initial, double time);
+};
+
+// ... (lernpi0n, unipi0n, QuantumRemoteServer, QuantSolo, DmChess, etc.)
+
+2. Objective-C++ Wrappers (for iOS/Mac Compatibility)
+-----------------------------------------------------
+// File: Pi0KernelWrapper.h
+#import <Foundation/Foundation.h>
+@interface Pi0KernelWrapper : NSObject
+- (instancetype)initWithConfig:(NSString*)configPath;
+@end
+
+// File: QuantumScienceWrapper.h
+#import <Foundation/Foundation.h>
+@class Pi0KernelWrapper;
+@interface QuantumScienceWrapper : NSObject
+- (instancetype)initWithKernel:(Pi0KernelWrapper*)kernel;
+- (id)evolveState:(id)initialState time:(double)time;
+@end
+
+3. Python API Exposure (PyObjC or Swift-Python Bridge)
+------------------------------------------------------
+# File: pi0kernel.py
+import objc
+Pi0KernelWrapper = objc.lookUpClass('Pi0KernelWrapper')
+class Pi0Kernel:
+    def __init__(self, config):
+        self._kernel = Pi0KernelWrapper.alloc().initWithConfig_(config)
+
+# File: quantum_science.py
+QuantumScienceWrapper = objc.lookUpClass('QuantumScienceWrapper')
+class QuantumScience:
+    def __init__(self, kernel):
+        self._qs = QuantumScienceWrapper.alloc().initWithKernel_(kernel._kernel)
+    def evolve_state(self, initial_state, time):
+        return self._qs.evolveState_time_(initial_state, time)
+
+4. Swift Integration (Optional)
+------------------------------
+// File: Pi0Kernel.swift
+import Foundation
+@objc class Pi0KernelSwift: NSObject {
+    let kernel: Pi0KernelWrapper
+    init(config: String) {
+        self.kernel = Pi0KernelWrapper(config: config)
+    }
+}
+
+5. Build & Export Notes
+-----------------------
+- Compile C++ modules with Apple Clang (Xcode project)
+- Link Objective-C++ wrappers to C++ core
+- Expose Objective-C++ to Python via PyObjC or to Swift via bridging headers
+- Modular structure allows hot-swapping and dynamic updates
+- All modules are accessible from Python, Swift, and Objective-C++
+
+This unified codebase enables seamless integration of Piat0r and Pi0System across Apple platforms, supporting native performance, modularity, and cross-language interoperability.

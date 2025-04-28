@@ -1,0 +1,17 @@
+Operator	Function	Mathematical Equation
+WEpi0n_Flow	Models dynamic passenger flow across the network	λ(t) = ∫(F × dM)/dt
+EPi0n_State	Represents energy distribution and state transitions in stations	ξ(s) = ∑(P × E)/√T
+GPi0n_Field	Captures field effects and velocity compression in the system	γ(v) = ∏(V × C)/∆t
+MPi0_Wave	Describes cyclical route optimization and wave-like movement	μ(r) = ∮(R × dS)/∇t
+O0t_Path	Analyzes flow-time derivatives for path optimization	ω(f) = ∫(dF × dT)/dr
+4sight_Quantum	Observes quantum state adaptation for predictive analytics	ψ(z) = ∑(Z × Q)/∆s
+G41_Network	Models mass-quantum coupling for network resilience	η(q) = ∏(Q × M)/∇r
+Gpi04_Space	Integrates volume-pressure cycles for spatial optimization	θ(p) = ∮(P × dV)/dt
+Metro_Flow	Measures overall passenger flow in the metro system	∑(v × ρ)/∆t
+Energy_State	Calculates energy state transitions in the network	∫(P × dV)/dr
+Time_Field	Tracks time field effects and temporal adaptation	∏(t × δ)/∇s
+Space_Wave	Analyzes spatial wave propagation in the system	∮(r × dA)/dt
+Quantum_State	Models quantum superposition of system states	∑(ψ × φ)/√t
+Field_Flow	Describes field-particle interactions in the network	∫(E × dB)/dr
+Wave_Path	Represents wave function collapse and path selection	∏(A × ω)/∆t
+Path_Integration	Integrates phase space trajectories for optimization	∮(p × dq)/dt

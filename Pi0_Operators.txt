@@ -1,0 +1,6 @@
+Pi0System Quantum Water Phase Space
+Ψ(H2O) = ∑(ψn)exp(-iEnt/ħ)
+E0 = (1/2)ħω
+∆E∆t ≥ ħ/2
+S = -k∑(pi ln pi)
+Φ(r,t) = ∫ψ*(r,t)Oψ(r,t)dr

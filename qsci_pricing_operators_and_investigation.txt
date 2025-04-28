@@ -1,0 +1,48 @@
+QSci Pricing Operators and Functions
+===============================
+
+Operator: qubit_usage_cost
+Function: Cost for quantum processing based on qubits and stability duration
+Equation: qubit_usage_cost = qubits * stability_hours * price_per_qubit_hour
+
+Operator: storage_usage_cost
+Function: Cost for storage based on exabytes and duration
+Equation: storage_usage_cost = exabytes * days * price_per_exabyte_day
+
+Operator: access_speed_cost
+Function: Cost for high-speed access
+Equation: access_speed_cost = gbps * hours * price_per_gbps_hour
+
+Operator: total_qsci_cost
+Function: Total cost for QSci usage
+Equation: total_qsci_cost = qubit_usage_cost + storage_usage_cost + access_speed_cost
+
+Operator: autonomous_pricing_trigger
+Function: System switches to autonomous pricing if baseline is met
+Equation: autonomous_pricing_trigger = 1 if (qubits >= 1e12 and exabytes >= 1 and gbps >= 1000) else 0
+
+Operator: user_demand_inference
+Function: System infers user needs from API usage or direct query
+Equation: user_demand = api_usage_pattern or user_query
+
+Operator: quantum_remote_server_install
+Function: Cost for QuantumRemoteServer setup
+Equation: qrs_install_cost = fixed_fee + variable_fee_per_connection
+
+Operator: infinite_user_scaling
+Function: No additional cost for user scaling in QuantumCloud
+Equation: user_scaling_cost = 0 for additional users
+
+
+QSci Pricing Investigation (Sample of 10,000 Scenarios)
+====================================================
+
+                  qubits            exabytes    stability_hours               gbps               days         total_cost
+count            10000.0             10000.0            10000.0            10000.0            10000.0            10000.0
+mean  50134817239833.664    4.98305116693001 24.486216085967317  5079.324214682301 181.94893418650477   2130460.61582393
+std   28957306552369.652  2.8556273392082074 13.547859580156148  2851.581182467914 104.70276599765737  1326864.075254763
+min   14811908192.231562 0.10005481308980614 1.0005468335022085 101.09129483804233 1.0490282536326565 17921.673188587214
+25%   25187242971582.383  2.4925243085236515 12.772658977254956 2602.0662682373486  91.46508291589419 1078266.1032348035
+50%     49980645467432.3   4.997663955588146  24.40851798099788  5108.696648618057 181.46405309056354  1921184.422929543
+75%     75537629860426.1   7.415174140764011 36.252247209569575  7529.715573013704  272.4529136967303 2947897.1002295096
+max    99980516361938.81   9.999724258943026   47.9979768553322  9999.255785648447  364.8810467081216  7813127.233899403

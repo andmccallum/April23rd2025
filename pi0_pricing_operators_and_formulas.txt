@@ -1,0 +1,35 @@
+Operator: IntegrationUnit
+Function: Measures the integration complexity and scale for an organization
+Formula: I = log_2(N) * S
+Variables: N = number of systems, S = scale factor (org size/1000)
+---
+Operator: FeatureUnit
+Function: Quantifies the number and complexity of custom features requested
+Formula: F = f * c
+Variables: f = number of features, c = complexity coefficient (1-5)
+---
+Operator: DataUnit
+Function: Represents the amount of data processed, stored, or exported
+Formula: D = d / 10
+Variables: d = total data in TB (rounded up to nearest 10 TB)
+---
+Operator: ReportUnit
+Function: Counts the number of reports generated
+Formula: R = r
+Variables: r = number of reports
+---
+Operator: AnalyticsUnit
+Function: Measures advanced analytics or simulation requests
+Formula: A = a * s
+Variables: a = number of analytics jobs, s = simulation complexity (1-10)
+---
+Operator: MutualBenefit
+Function: Calculates the optimal price for both provider and client
+Formula: MB = (Vp + Vc) / 2
+Variables: Vp = provider value, Vc = client value
+---
+Operator: Pi0Price
+Function: Final price calculation in Pi0Coin, CDN, and ETH
+Formula: P = (I + F + D + R + A) * U
+Variables: U = unit price (currency conversion as needed)
+---

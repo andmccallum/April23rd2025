@@ -1,0 +1,6 @@
+Pi0System Operators
+Quantum State: |Ψ⟩ = α|0⟩ + β|1⟩
+Entanglement: |Φ⟩ = (|00⟩ + |11⟩)/√2
+Superposition: Ψ = ∑ciψi
+Phase: eiθ|ψ⟩
+Evolution: iħ∂|ψ⟩/∂t = H|ψ⟩

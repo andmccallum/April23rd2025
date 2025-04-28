@@ -1,0 +1,27 @@
+
+PI0 SYSTEM BASE COST SUMMARY
+===========================
+
+Key Implementation Costs (CDN):
+- 100 Person Company: $1.2M
+- 1,000 Person Company: $6M
+- 10,000 Person Company: $24M
+
+Cost Includes:
+- Full Pi0Secure implementation
+- All base functions
+- 10-year future-proofing
+- Historical knowledge value
+- Highest regional cost basis
+- Perpetual license model
+- Unlimited base updates
+- 24/7 support infrastructure
+
+Conversion Rates:
+1 CDN = 0.004 PI0C
+1 CDN = 0.0004 ETH
+
+Notes:
+- Prices reflect maximum implementation cost
+- Includes all base Pi0Secure functions
+- Additional customization quoted separately

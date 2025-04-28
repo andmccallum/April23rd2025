@@ -1,0 +1,15 @@
+
+PI0ARCHITECT RATE STRUCTURE SUMMARY
+=================================
+
+Company Size    Base Rate (CDN/hour)    Process Rate    Iteration Rate
+1 person       33.33                   12.00          1.20
+100 people     555.56                  1,200.00       120.00
+1,000 people   925.93                  6,000.00       600.00
+10,000 people  1,851.85                24,000.00      2,400.00
+
+Notes:
+- Rates include all Pi0Secure base functions
+- Rates account for highest implementation cost globally
+- Process and iteration rates are per unit
+- All rates include knowledge transfer and future-proofing
